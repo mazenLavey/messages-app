@@ -1,0 +1,15 @@
+.TagsPanel {
+    display: flex;
+}
+
+.TagsPanel__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.TagsPanel__slider {
+    padding-right: 4px;
+}

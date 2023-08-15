@@ -1,0 +1,29 @@
+
+
+.MessageCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: white;
+    padding: 16px 8px;
+    border-radius: 8px;
+}
+
+.MessageCard__tags {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4px;
+    font-size: 14px;
+    color: gray;
+    opacity: 0.5;
+}
+
+.MessageCard__time {
+    position: absolute;
+    bottom: 16px;
+    right: 8px;
+    font-size: 12px;
+    color: #cecece;
+}

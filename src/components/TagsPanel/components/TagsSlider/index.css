@@ -1,0 +1,26 @@
+.TagsSlider {
+    width: 100px;
+    height: 100%;
+    padding: 16px;
+    border-radius: 16px 0 0 16px;
+    background-color: white;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: #ececec transparent;
+}
+
+.TagsSlider__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.TagsSlider::-webkit-scrollbar {
+    width: 5px;
+}
+
+.TagsSlider::-webkit-scrollbar-thumb {
+    background-color: #ececec;
+    border-radius: 16px;
+}

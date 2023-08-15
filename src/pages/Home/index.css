@@ -1,0 +1,10 @@
+.Home {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: calc(100vh - 150px);
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 16px;
+    background-color: white;
+    overflow: hidden;
+}
