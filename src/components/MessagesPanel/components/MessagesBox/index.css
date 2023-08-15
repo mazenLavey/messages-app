@@ -27,3 +27,10 @@
     background-color: #6dbad8;
     border-radius: 16px;
 }
+
+.MessagesBox__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
