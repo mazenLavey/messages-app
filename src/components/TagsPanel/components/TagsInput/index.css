@@ -1,0 +1,24 @@
+.TagsInput {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #ececee;
+    border-radius: 8px;
+    height: 60px;
+}
+
+.TagsInput > input {
+    flex-grow: 1;
+}
+
+@media (max-width: 575px) {
+    .TagsInput > input {
+        max-width: 100px;
+    }
+}
+
+.TagsInput:hover {
+    border-color: #6dbad8;
+}

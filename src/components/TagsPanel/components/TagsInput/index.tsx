@@ -1,8 +1,9 @@
 import { useContext, useState } from 'react';
 import { MessagesContext } from 'context/MessagesContext';
-import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import './index.css';
 
 const TagsInput: React.FC = () => {
     const { addTags } = useContext(MessagesContext)
@@ -22,25 +23,26 @@ const TagsInput: React.FC = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <Stack direction="row">
-                <TextField
-                    fullWidth
+        <form className='TagsInput' onSubmit={handleSubmit}>
+                <input
+                    type="text"
                     id="userTag"
                     name="userTag"
-                    variant="outlined"
                     value={userTag}
                     placeholder='Add a tag / filter by tag'
                     onChange={handleChange}
                 />
 
                 <Button
-                    variant="outlined"
+                    variant="contained"
                     type="submit"
+                    sx={{
+                        backgroundColor: '#6dbad8'
+                    }}
+                    endIcon={<FontAwesomeIcon icon={faPlus} />}
                 >
                     add
                 </Button>
-            </Stack>
         </form>
     )
 }

@@ -2,6 +2,13 @@
     display: flex;
     align-items: center;
     height: 60px;
-    border-bottom: 1px solid #ececee;
-    background-color: white;
+}
+
+.Header__logo {
+    height: 50px;
+}
+
+.Header__logo-img {
+    height: 100%;
+    object-fit: contain;
 }

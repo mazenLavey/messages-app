@@ -1,9 +1,10 @@
 import { useContext, useState } from 'react';
-import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 import { MessagesContext } from 'context/MessagesContext';
 import { MessageType } from 'types/interfaces';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import './index.css';
 
 const MessagesInput: React.FC = () => {
     const { sendMessage, tags } = useContext(MessagesContext);
@@ -30,25 +31,26 @@ const MessagesInput: React.FC = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <Stack direction="row">
-                <TextField
-                    fullWidth
+        <form className='MessagesInput' onSubmit={handleSubmit}>
+                <input
+                    type='text'
                     id="userMessage"
                     name="userMessage"
-                    variant="outlined"
                     value={userMessage}
                     placeholder='Write a message...'
                     onChange={handleChange}
                 />
 
                 <Button
-                    variant="outlined"
+                    variant="contained"
                     type="submit"
+                    sx={{
+                        backgroundColor: '#6dbad8'
+                    }}
+                    endIcon={<FontAwesomeIcon icon={faPaperPlane} />}
                 >
                     send
                 </Button>
-            </Stack>
         </form>
     )
 }

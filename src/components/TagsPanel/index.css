@@ -1,15 +1,20 @@
 .TagsPanel {
     display: flex;
+    gap: 8px;
 }
 
 .TagsPanel__body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 8px;
     height: 100%;
     width: 100%;
 }
 
-.TagsPanel__slider {
-    padding-right: 4px;
+
+@media (max-width: 767px) {
+    .TagsPanel {
+        height: 200px;
+    }
 }

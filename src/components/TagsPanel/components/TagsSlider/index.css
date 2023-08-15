@@ -1,13 +1,19 @@
 .TagsSlider {
     width: 100px;
     height: 100%;
-    padding: 16px;
-    border-radius: 16px 0 0 16px;
+    padding: 8px;
+    border-radius: 16px 8px 8px 16px;
     background-color: white;
     overflow-y: auto;
 
     scrollbar-width: thin;
-    scrollbar-color: #ececec transparent;
+    scrollbar-color: #6dbad8 transparent;
+}
+
+@media (max-width: 767px) {
+    .TagsSlider {
+        border-radius: 8px;
+    }
 }
 
 .TagsSlider__wrapper {
@@ -21,6 +27,6 @@
 }
 
 .TagsSlider::-webkit-scrollbar-thumb {
-    background-color: #ececec;
+    background-color: #6dbad8;
     border-radius: 16px;
 }

@@ -18,7 +18,9 @@ const TagsBox: React.FC = () => {
                 label={el}
                 onDelete={() => handleDelete(el)}
                 sx={{
-                    margin: "0 10px 10px 0"
+                    margin: "0 10px 10px 0",
+                    backgroundColor: "#6dbad8",
+                    color: "white"
                 }}
             />
         )
