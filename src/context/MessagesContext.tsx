@@ -57,10 +57,6 @@ const MessagesProvider: React.FC<Props> = ({ children }) => {
         getMessages();
     }, [tags])
 
-    useEffect(() => {
-
-    }, [tags])
-
     const addTags = (tagsValue: string[]): void => {
         setTags(prev => [...prev, ...tagsValue])
     }
