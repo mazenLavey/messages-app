@@ -89,39 +89,3 @@ const MessagesProvider: React.FC<Props> = ({ children }) => {
 }
 
 export { MessagesContext, MessagesProvider }
-
-// useEffect(() => {
-//     const getUsers = () => {
-//         const usersRef = ref(db, 'users/')
-//         onValue(usersRef, (snapshot) => {
-//             const data: UserData[] = snapshot?.val()
-
-//             if (data) {
-//                 setUsersData(Object.values(data))
-//             }
-//         })
-//     }
-
-//     getUsers();
-// }, [])
-
-
-// const addUser = async (data: UserBasic): Promise<void> => {
-//     const createdAt: string = auth.currentUser?.metadata.creationTime ?? new Date().toISOString();
-//     const lastLoginAt: string = auth.currentUser?.metadata.lastSignInTime ?? new Date().toISOString();
-
-//     const usersRef = ref(db, 'users/' + data.id);
-
-//     const userData: UserData = {
-//         ...data,
-//         createdAt: createdAt,
-//         lastLoginAt: lastLoginAt
-//     };
-
-//     try {
-//         await set(usersRef, userData);
-//     } catch (error: any) {
-//         throw new Error (error.message);
-
-//     }
-// };
